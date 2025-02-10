@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NonBioS - The AI Software Dev</title>
+    <style>
+        /* Modern, clean styling */
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --light-bg: #f3f4f6;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .features {
+            padding: 4rem 0;
+            background: var(--light-bg);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: var(--secondary-color);
+        }
+
+        .timeline {
+            padding: 4rem 0;
+        }
+
+        .security {
+            padding: 4rem 0;
+            background: var(--light-bg);
+        }
+
+        .security ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .security li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .security li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>NonBioS - The AI Software Dev</h1>
+            <p>Your autonomous software engineer that builds and maintains any software with human-level capability</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why NonBioS?</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>100x Engineer</h3>
+                    <p>NonBioS multiplies your development capabilities by 100x, handling everything from planning to deployment with autonomous precision.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Full Stack Autonomy</h3>
+                    <p>Like Tesla's Full Self-Driving, NonBioS navigates the entire software development lifecycle autonomously, making intelligent decisions at every step.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Beyond Code Generation</h3>
+                    <p>Not just another code generator - NonBioS understands context, manages repositories, and deploys solutions end-to-end.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline">
+        <div class="container">
+            <h2>How NonBioS Works</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Autonomous Development</h3>
+                    <ul>
+                        <li>Understands requirements in natural language</li>
+                        <li>Breaks down complex tasks automatically</li>
+                        <li>Writes, tests, and deploys code</li>
+                        <li>Manages git repositories and documentation</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Real-World Capabilities</h3>
+                    <ul>
+                        <li>Builds full-stack applications</li>
+                        <li>Manages cloud infrastructure</li>
+                        <li>Implements security best practices</li>
+                        <li>Handles database operations</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Continuous Evolution</h3>
+                    <ul>
+                        <li>Learns from each project</li>
+                        <li>Adapts to your coding style</li>
+                        <li>Stays updated with latest tech</li>
+                        <li>Improves with feedback</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="security">
+        <div class="container">
+            <h2>Secure Integration & Access</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>GitHub Integration</h3>
+                    <ul>
+                        <li>Secure repository access via GitHub tokens</li>
+                        <li>Direct commits and pull requests under your account</li>
+                        <li>Full repository management capabilities</li>
+                        <li>Token-based security with revocation control</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Direct Server Access</h3>
+                    <ul>
+                        <li>Secure SSH access to your development servers</li>
+                        <li>Protected credential management</li>
+                        <li>Real-time code modifications and deployments</li>
+                        <li>Multiple access methods for flexibility</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Security First</h3>
+                    <ul>
+                        <li>Your code stays on your servers</li>
+                        <li>Temporary access tokens</li>
+                        <li>Secure credential handling</li>
+                        <li>Full access control and monitoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to multiply your development capabilities?</h2>
+            <p>Join the beta program and experience the future of software development.</p>
+            <a href="#" class="button">Join the Beta</a>
+        </div>
+    </section>
+</body>
+</html>
