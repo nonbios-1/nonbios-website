@@ -71,12 +71,36 @@
 
         .feature-item h3 {
             color: var(--primary-color);
-            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .capabilities {
+            padding: 4rem 0;
+        }
+
+        .capabilities ul {
+            list-style-type: none;
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        .capabilities li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .capabilities li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
         }
 
         .cta {
             text-align: center;
             padding: 4rem 0;
+            background: var(--light-bg);
         }
 
         .button {
@@ -88,92 +112,72 @@
             text-decoration: none;
             font-weight: bold;
             transition: background 0.3s ease;
+            margin-top: 2rem;
         }
 
         .button:hover {
             background: var(--secondary-color);
         }
 
-        .timeline {
-            padding: 4rem 0;
+        section {
+            margin-bottom: 2rem;
         }
 
-        .security {
-            padding: 4rem 0;
-            background: var(--light-bg);
-        }
-
-        .security ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .security li {
-            margin-bottom: 0.5rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-
-        .security li:before {
-            content: "→";
-            position: absolute;
-            left: 0;
-            color: var(--primary-color);
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
         }
     </style>
 </head>
 <body>
     <div class="hero">
         <div class="container">
-            <h1>NonBioS - The AI Software Engineer</h1>
-            <p>Building the future of software development with autonomous AI</p>
+            <h1>NonBioS</h1>
+            <p>Your Autonomous AI Software Engineer</p>
         </div>
     </div>
 
     <div class="features">
         <div class="container">
-            <h2>Why NonBioS?</h2>
+            <h2 class="section-title">The Future of Software Development is Here</h2>
             <div class="feature-grid">
                 <div class="feature-item">
                     <h3>Autonomous Development</h3>
-                    <p>Like Tesla's FSD for coding - NonBioS autonomously handles the entire software development process, from planning to deployment.</p>
+                    <p>Like Tesla's Full Self-Driving for software development, NonBioS autonomously handles the entire engineering process. From understanding requirements to deploying production-ready code, we're revolutionizing how software gets built.</p>
                 </div>
                 <div class="feature-item">
                     <h3>100x Engineer Power</h3>
-                    <p>Amplify your development capabilities with AI that understands context, manages complexity, and delivers high-quality code.</p>
+                    <p>Transform into a superhuman developer. NonBioS amplifies your capabilities by handling complex tasks, managing technical debt, and delivering high-quality code at unprecedented speed.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>Full-Stack Capability</h3>
-                    <p>From frontend to backend, database to DevOps - NonBioS handles it all with expertise and precision.</p>
+                    <h3>Beyond Traditional AI</h3>
+                    <p>Unlike traditional AI coding assistants, NonBioS understands context, maintains long-term memory, and executes complete development workflows autonomously.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="timeline">
+    <div class="capabilities">
         <div class="container">
-            <h2>How NonBioS Works</h2>
-            <p>NonBioS breaks down complex tasks into manageable steps, executes them with precision, and learns from each interaction to improve its capabilities.</p>
-        </div>
-    </div>
-
-    <div class="security">
-        <div class="container">
-            <h2>Enterprise-Ready Security</h2>
+            <h2 class="section-title">What NonBioS Can Do</h2>
             <ul>
-                <li>Secure authentication and access controls</li>
-                <li>Data encryption at rest and in transit</li>
-                <li>Compliance with industry standards</li>
-                <li>Regular security audits and updates</li>
+                <li>Build complete applications from natural language descriptions</li>
+                <li>Deploy and manage large-scale ML models (up to 405B parameters)</li>
+                <li>Implement complex features while maintaining code quality</li>
+                <li>Handle the entire development lifecycle from planning to deployment</li>
+                <li>Manage technical debt and improve code architecture</li>
+                <li>Execute precise Linux commands and development workflows</li>
+                <li>Create beautiful, responsive user interfaces</li>
+                <li>Integrate with existing codebases and development tools</li>
             </ul>
         </div>
     </div>
 
     <div class="cta">
         <div class="container">
-            <h2>Join the Future of Software Development</h2>
-            <p>Be among the first to experience autonomous AI software development</p>
-            <a href="#" class="button">Join the Beta</a>
+            <h2>Ready to Transform Your Development Process?</h2>
+            <p>Join the beta program and experience the future of software development. Be among the first to work with an AI that doesn't just assist - it builds.</p>
+            <a href="#" class="button">Join the Beta Program</a>
         </div>
     </div>
 </body>
