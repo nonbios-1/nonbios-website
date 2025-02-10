@@ -9,15 +9,16 @@
             --primary-color: #2563eb;
             --secondary-color: #1e40af;
             --text-color: #1f2937;
-            --light-bg: #f3f4f6;
+            --light-text: #6b7280;
+            --background: #ffffff;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
@@ -39,146 +40,137 @@
 
         .hero h1 {
             font-size: 3.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             font-weight: 800;
-            line-height: 1.2;
         }
 
         .hero p {
             font-size: 1.5rem;
             max-width: 800px;
             margin: 0 auto;
+            opacity: 0.9;
         }
 
-        .features {
-            padding: 4rem 0;
-            background: var(--light-bg);
+        section {
+            padding: 5rem 0;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--text-color);
         }
 
         .feature-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
         }
 
         .feature-item {
-            background: white;
+            background: var(--background);
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .feature-item h3 {
-            color: var(--primary-color);
+            font-size: 1.5rem;
             margin-bottom: 1rem;
-        }
-
-        .capabilities {
-            padding: 4rem 0;
-        }
-
-        .capabilities ul {
-            list-style-type: none;
-            max-width: 800px;
-            margin: 2rem auto;
-        }
-
-        .capabilities li {
-            margin-bottom: 1rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-
-        .capabilities li:before {
-            content: "→";
-            position: absolute;
-            left: 0;
             color: var(--primary-color);
         }
 
-        .cta {
-            text-align: center;
-            padding: 4rem 0;
-            background: var(--light-bg);
+        .feature-item p, .feature-item li {
+            color: var(--light-text);
+            margin-bottom: 0.5rem;
         }
 
-        .button {
-            display: inline-block;
-            background: var(--primary-color);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s ease;
-            margin-top: 2rem;
+        .feature-item ul {
+            list-style-position: inside;
+            margin-top: 1rem;
         }
 
-        .button:hover {
-            background: var(--secondary-color);
-        }
-
-        section {
-            margin-bottom: 2rem;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 2rem;
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.25rem;
+            }
+            
+            section {
+                padding: 3rem 0;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="hero">
+    <section class="hero">
         <div class="container">
             <h1>NonBioS</h1>
-            <p>Your Autonomous AI Software Engineer</p>
+            <p>Your autonomous software engineer that builds and maintains any software with human-level capability</p>
         </div>
-    </div>
+    </section>
 
-    <div class="features">
+    <section class="features">
         <div class="container">
-            <h2 class="section-title">The Future of Software Development is Here</h2>
+            <h2>Why NonBioS?</h2>
             <div class="feature-grid">
                 <div class="feature-item">
-                    <h3>Autonomous Development</h3>
-                    <p>Like Tesla's Full Self-Driving for software development, NonBioS autonomously handles the entire engineering process. From understanding requirements to deploying production-ready code, we're revolutionizing how software gets built.</p>
+                    <h3>100x Engineer</h3>
+                    <p>NonBioS multiplies your development capabilities by 100x, handling everything from planning to deployment with autonomous precision.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>100x Engineer Power</h3>
-                    <p>Transform into a superhuman developer. NonBioS amplifies your capabilities by handling complex tasks, managing technical debt, and delivering high-quality code at unprecedented speed.</p>
+                    <h3>Full Stack Autonomy</h3>
+                    <p>Like Tesla's Full Self-Driving, NonBioS navigates the entire software development lifecycle autonomously, making intelligent decisions at every step.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>Beyond Traditional AI</h3>
-                    <p>Unlike traditional AI coding assistants, NonBioS understands context, maintains long-term memory, and executes complete development workflows autonomously.</p>
+                    <h3>Beyond Code Generation</h3>
+                    <p>Not just another code generator - NonBioS understands context, manages repositories, and deploys solutions end-to-end.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="capabilities">
+    <section class="timeline">
         <div class="container">
-            <h2 class="section-title">What NonBioS Can Do</h2>
-            <ul>
-                <li>Build complete applications from natural language descriptions</li>
-                <li>Deploy and manage large-scale ML models (up to 405B parameters)</li>
-                <li>Implement complex features while maintaining code quality</li>
-                <li>Handle the entire development lifecycle from planning to deployment</li>
-                <li>Manage technical debt and improve code architecture</li>
-                <li>Execute precise Linux commands and development workflows</li>
-                <li>Create beautiful, responsive user interfaces</li>
-                <li>Integrate with existing codebases and development tools</li>
-            </ul>
+            <h2>How NonBioS Works</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Autonomous Development</h3>
+                    <ul>
+                        <li>Understands requirements in natural language</li>
+                        <li>Breaks down complex tasks automatically</li>
+                        <li>Writes, tests, and deploys code</li>
+                        <li>Manages git repositories and documentation</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Real-World Capabilities</h3>
+                    <ul>
+                        <li>Builds full-stack applications</li>
+                        <li>Manages cloud infrastructure</li>
+                        <li>Implements security best practices</li>
+                        <li>Handles database operations</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Continuous Evolution</h3>
+                    <ul>
+                        <li>Learns from each project</li>
+                        <li>Adapts to your coding style</li>
+                        <li>Stays updated with best practices</li>
+                        <li>Improves with usage</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="cta">
-        <div class="container">
-            <h2>Ready to Transform Your Development Process?</h2>
-            <p>Join the beta program and experience the future of software development. Be among the first to work with an AI that doesn't just assist - it builds.</p>
-            <a href="#" class="button">Join the Beta Program</a>
-        </div>
-    </div>
+    </section>
 </body>
 </html>
